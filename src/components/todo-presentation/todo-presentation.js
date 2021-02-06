@@ -51,6 +51,7 @@ export default function TodoPresentation() {
     todoList.map((todo, index) => {
       return (
         <div
+          id="display-todo-box"
           key={index}
           className={checkedList.includes(todo) ? "is-done" : ""} //add style if checked
         >
