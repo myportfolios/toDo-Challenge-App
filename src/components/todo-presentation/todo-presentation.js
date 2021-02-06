@@ -51,9 +51,9 @@ export default function TodoPresentation() {
     todoList.map((todo, index) => {
       return (
         <div
-          id="display-todo-box"
           key={index}
           className={checkedList.includes(todo) ? "is-done" : ""} //add style if checked
+          style={{ display: "flex" }}
         >
           <li className="display-todo-box_todo">{todo}</li>
           <input
@@ -74,7 +74,7 @@ export default function TodoPresentation() {
         <div className="input-btn-box">
           <input
             type="text"
-            placeholder="Enter Todo"
+            placeholder="ENTER TODO"
             className="input-btn-box__text-input"
             onChange={handleUserInput}
             value={todoItem}
@@ -84,6 +84,7 @@ export default function TodoPresentation() {
             type="submit"
             className="input-btn-box__save-btn"
             onClick={addTodoHandler}
+            value="ADD TODO"
           />
         </div>
       </RenderInputWithBtn>

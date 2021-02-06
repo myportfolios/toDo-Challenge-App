@@ -1,6 +1,28 @@
-#display-todo-box {
-  display: flex;
-}
 .is-done {
   text-decoration: line-through;
+}
+.input-btn-box {
+  &__save-btn {
+    margin-left: 10px;
+    background: #2b8aff;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    padding: 15px 35px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  &__save-btn:hover {
+    margin-left: 10px;
+    background: white;
+    color: #2b8aff;
+    border: none;
+    border-radius: 2px;
+    padding: 15px 35px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  &__text-input {
+    padding: 13px 35px;
+  }
 }
